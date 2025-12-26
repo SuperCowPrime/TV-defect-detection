@@ -13,14 +13,14 @@ This project presents a novel approach to detecting and classifying defects on T
 This repository is organized as follows:
 
 * **`Automated TV Defect Detection Using Generative AI Code/`**: Main folder containing source code and data.
-    * **`[GenerationV_4].py`**: Code used to generate the synthetic images.
-    * **`[Mask_Creation].py`**: Code used to generate the masks.
-    * **`[Defect_Creation].py`**: Code used to generate the Defects.
-   * **`[Model_Training].py`**: Training and evaluation of the YOLO11n-cls model.
-    * **`[TV_Dataset]/`**: Contains the generated synthetic dataset.
-     * **`[Masks]/`**: Contains the generated mask dataset.
-   * **`[Defected_TVs]/`**: Contains the generated inpainted dataset(and some of the none defected TVs).
-* **`Automated-TV-Defect-Detection (proposal slides)`**: Project proposal (PPT format).
+    * **`GenerationV_4.py`**: Code used to generate the synthetic images.
+    * **`Mask_Creation.py`**: Code used to generate the masks.
+    * **`Defect_Creation.py`**: Code used to generate the defects.
+    * **`Model_Training.py`**: Training and evaluation of the YOLO11n-cls model.
+    * **`Defected_TVs_Parts/`**: Folder containing split RAR archives of the generated (good) TVs.
+    * **`TV_Dataset_Parts/`**: Folder containing split RAR archives of the generated defected TVs.
+    * **`Masks.rar`**: Compressed archive containing the generated binary masks.
+* **`Automated-TV-Defect-Detection (proposal slides).pptx`**: Project proposal.
 * **`Project-Review-AI-for-Defect-Detection.pptx`**: Interim report presentation (PPT format).
 * **`Project-Review-AI-for-Defect-Detection.pdf`**: Interim report presentation (PDF format).
 
