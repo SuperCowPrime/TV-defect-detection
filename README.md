@@ -17,13 +17,13 @@ This repository is organized as follows:
     * **`Mask_Creation.py`**: Code used to generate the masks.
     * **`Defect_Creation.py`**: Code used to generate the defects.
     * **`Model_Training.py`**: Training and evaluation of the YOLO11n-cls model.
-    * **`Defected_TVs_Parts/`**: Folder containing split RAR archives of the generated (good) TVs.
-    * **`TV_Dataset_Parts/`**: Folder containing split RAR archives of the generated defected TVs.
+    * **`Defected_TVs_Parts/`**: Folder containing archive of the generated (good) TVs.
+    * **`TV_Dataset_Parts/`**: Folder containing archive of the generated defected TVs.
     * **`Masks.rar`**: Compressed archive containing the generated binary masks.
 * **`Automated-TV-Defect-Detection (proposal slides).pptx`**: Project proposal.
 * **`Project-Review-AI-for-Defect-Detection.pptx`**: Interim report presentation (PPT format).
 * **`Project-Review-AI-for-Defect-Detection.pdf`**: Interim report presentation (PDF format).
-
+> **Note:** Due to GitHub's file size limitations, the dataset uploaded to this repository is a **partial sample** of the full dataset used to achieve the reported results.
 ## The Pipeline
 
 The project consists of a fully automated pipeline with four main stages:
