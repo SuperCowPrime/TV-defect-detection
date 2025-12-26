@@ -13,10 +13,13 @@ This project presents a novel approach to detecting and classifying defects on T
 This repository is organized as follows:
 
 * **`Automated TV Defect Detection Using Generative AI Code/`**: Main folder containing source code and data.
-    * **`[Your_Data_Generation_Notebook].ipynb`**: Code used to generate the synthetic images (Base Generation + Inpainting).
-    * **`[Your_EDA_Notebook].ipynb`**: Exploratory Data Analysis of the generated dataset.
-    * **`[Your_Baseline_Evaluation_Notebook].ipynb`**: Training and evaluation of the YOLO11n-cls model.
-    * **`[Data_Folder_Name]/`**: Contains the generated synthetic dataset used for training.
+    * **`[GenerationV_4].py`**: Code used to generate the synthetic images.
+    * **`[Mask_Creation].py`**: Code used to generate the masks.
+    * **`[Defect_Creation].py`**: Code used to generate the Defects.
+   * **`[Model_Training].py`**: Training and evaluation of the YOLO11n-cls model.
+    * **`[TV_Dataset]/`**: Contains the generated synthetic dataset.
+     * **`[Masks]/`**: Contains the generated mask dataset.
+      * **`[Defected_TVs]/`**: Contains the generated inpainted dataset(and some of the none defected TVs).
 * **`Project-Review-AI-for-Defect-Detection.pptx`**: Interim report presentation (PPT format).
 * **`Project-Review-AI-for-Defect-Detection.pdf`**: Interim report presentation (PDF format).
 
