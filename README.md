@@ -19,7 +19,7 @@ This repository is organized as follows:
    * **`[Model_Training].py`**: Training and evaluation of the YOLO11n-cls model.
     * **`[TV_Dataset]/`**: Contains the generated synthetic dataset.
      * **`[Masks]/`**: Contains the generated mask dataset.
-      * **`[Defected_TVs]/`**: Contains the generated inpainted dataset(and some of the none defected TVs).
+   * **`[Defected_TVs]/`**: Contains the generated inpainted dataset(and some of the none defected TVs).
 * **`Project-Review-AI-for-Defect-Detection.pptx`**: Interim report presentation (PPT format).
 * **`Project-Review-AI-for-Defect-Detection.pdf`**: Interim report presentation (PDF format).
 
