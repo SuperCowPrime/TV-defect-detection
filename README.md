@@ -17,6 +17,7 @@ This repository is organized as follows:
     * **`Mask_Creation.py`**: Code used to generate the masks.
     * **`Defect_Creation.py`**: Code used to generate the defects.
     * **`Model_Training.py`**: Training and evaluation of the YOLO11n-cls model.
+    * **`Rectify.py`**: Preprocessing script that applies perspective transformation to flatten the TV screens (used for comparative analysis).
     * **`Defected_TVs_Parts/`**: Folder containing archive of the generated (good) TVs.
     * **`TV_Dataset_Parts/`**: Folder containing archive of the generated defected TVs.
     * **`Masks.rar`**: Compressed archive containing the generated binary masks.
@@ -31,7 +32,8 @@ The project consists of a fully automated pipeline with four main stages:
 1.  **Base Generation:** Generating images of healthy TVs in an industrial environment using `SDXL Lightning` (RealVisXL V4.0).
 2.  **Smart Labeling & Masking:** Detecting the screen and creating accurate binary masks using a combination of `OWLv2` (Object Detection) and `SAM` (Segmentation).
 3.  **Defect Injection:** Using Inpainting (`RealVisXL_V4.0_inpainting`) to "inject" defects into the masked areas.
-4.  **Classification:** Training a `YOLO11n-cls` model on the synthetic dataset to classify the defect type.
+4.  **Perspective Rectification:** Preprocessing the dataset by isolating and "flattening" the TV screens using OpenCV perspective transformation. We conduct a comparative analysis between models trained on Raw Images vs. Rectified Images to evaluate the impact on accuracy.
+5.  **Classification:** Training two separate YOLO11n-cls models on the synthetic datasets (one Raw, one Rectified) to classify the defect type and establish a robust performance comparison.
 
 ## Defect Classes
 
