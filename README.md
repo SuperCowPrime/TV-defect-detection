@@ -45,10 +45,25 @@ The model is trained to identify 5 distinct classes:
 * **Shattered_corner:** Structural damage in the corner.
 * **Puncture:** Impact holes/crushed glass.
 
-## Results
+## Results & Comparative Analysis
 
-The model was trained for 10 Epochs and achieved high performance on the Validation set:
+We trained the YOLO11n-cls model for 10 epochs on two datasets to validate our preprocessing pipeline:
+1.  **Raw Dataset:** Standard images with industrial background.
+2.  **Rectified Dataset:** Images processed via `Rectify.py` to isolate the screen.
 
-* **Accuracy:** 97.1%
-* **Recall:** 0.966
+### Performance Comparison
+
+| Metric | Raw Dataset | Rectified Dataset |
+| :--- | :--- | :--- |
+| **Top-1 Accuracy** | 99.09% | **99.03%** |
+| **Training Time** | 2318.97 s | **1308.96 s** |
+
+### Conclusion
+The **Rectification** step proved critical. By isolating the TV screen, we reduced training time by ~43% while maintaining comparable accuracy, making the model more efficient for deployment.
+
+
+### Final Metrics (Rectified Model)
 * **Model:** YOLO11n-cls
+* **Epochs:** 10
+* **Best Accuracy:** 99.03% (Epoch 7)
+* **Loss:** 0.0346 (Validation)
