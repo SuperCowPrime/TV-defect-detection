@@ -37,13 +37,13 @@ The project consists of a fully automated pipeline with four main stages:
 
 ## Defect Classes
 
-The model is trained to identify 5 distinct classes:
+The dataset utilized for training consists of **7,200 synthetic images**, balanced across 5 distinct classes:
 
-* **Good:** Healthy screen.
-* **Spiderweb:** Web-like cracks.
-* **Scratch:** Surface scratches.
-* **Shattered_corner:** Structural damage in the corner.
-* **Puncture:** Impact holes/crushed glass.
+* **Good:** Healthy screen (3600 images).
+* **Spiderweb:** Web-like cracks (900 images).
+* **Scratch:** Surface scratches (900 images).
+* **Shattered_corner:** Structural damage in the corner (900 images).
+* **Puncture:** Impact holes/crushed glass (900 images).
 
 ## Results & Comparative Analysis
 
