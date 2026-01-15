@@ -1,5 +1,6 @@
 import torch
 import os
+import cv2 
 import numpy as np
 from PIL import Image
 from transformers import Owlv2Processor, Owlv2ForObjectDetection
@@ -32,7 +33,7 @@ for i, filename in enumerate(files):
     pil_image = Image.open(img_path).convert("RGB")
 
 
-    texts = [["flat black screen,television screen,display"]]
+    texts = [["television screen", "flat screen display", "monitor"]]
     inputs = processor(text=texts, images=pil_image, return_tensors="pt").to(device)
 
     with torch.no_grad():
@@ -40,18 +41,22 @@ for i, filename in enumerate(files):
 
 
     target_sizes = torch.tensor([pil_image.size[::-1]])
-    results = processor.post_process_object_detection(outputs, threshold=0.3, target_sizes=target_sizes)[0]
+    results = processor.post_process_object_detection(outputs, threshold=0.1, target_sizes=target_sizes)[0]
 
     if len(results["boxes"]) == 0:
         print(f"[{i}] No TV found in {filename}, skipping.")
         continue
 
     boxes = results["boxes"]
-
     areas = (boxes[:, 2] - boxes[:, 0]) * (boxes[:, 3] - boxes[:, 1])
-
     best_idx = areas.argmax()
     best_box = boxes[best_idx].cpu().numpy()
+
+
+    box_height = best_box[3] - best_box[1]
+    cutoff = box_height * 0.10
+    best_box[3] = best_box[3] - cutoff
+
 
 
     image_np = np.array(pil_image)
@@ -66,6 +71,10 @@ for i, filename in enumerate(files):
 
 
     binary_mask = masks[0].astype(np.uint8) * 255
+
+
+    kernel = np.ones((30, 30), np.uint8)
+    binary_mask = cv2.erode(binary_mask, kernel, iterations=1)
 
 
     mask_image = Image.fromarray(binary_mask)
