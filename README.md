@@ -10,21 +10,19 @@ This project presents a novel approach to detecting and classifying defects on T
 
 ## Repository Structure
 
-This repository is organized as follows:
-
-* **`Automated TV Defect Detection Using Generative AI Code/`**: Main folder containing source code and data.
-    * **`GenerationV_4.py`**: Code used to generate the synthetic images.
-    * **`Mask_Creation.py`**: Code used to generate the masks.
-    * **`Defect_Creation.py`**: Code used to generate the defects.
-    * **`Model_Training.py`**: Training and evaluation of the YOLO11n-cls model.
-    * **`Rectify.py`**: Preprocessing script that applies perspective transformation to flatten the TV screens (used for comparative analysis).
-    * **`Defected_TVs_Parts/`**: Folder containing archive of the generated (good) TVs.
-    * **`TV_Dataset_Parts/`**: Folder containing archive of the generated defected TVs.
-    * **`Masks.rar`**: Compressed archive containing the generated binary masks.
-* **`Automated-TV-Defect-Detection (proposal slides).pptx`**: Project proposal.
-* **`Project-Review-AI-for-Defect-Detection.pptx`**: Interim report presentation (PPT format).
-* **`Project-Review-AI-for-Defect-Detection.pdf`**: Interim report presentation (PDF format).
-> **Note:** Due to GitHub's file size limitations, the dataset uploaded to this repository is a **partial sample** of the full dataset used to achieve the reported results.
+```text
+Automated TV Defect Detection Using Generative AI Code/
+├── GenerationV_4.py           # Code used to generate the synthetic images (SDXL Lightning)
+├── Mask_Creation.py           # Code used to generate the binary masks (OWLv2 + SAM)
+├── Defect_Creation.py         # Code used to inject defects (Inpainting)
+├── Rectify.py                 # Preprocessing script for perspective transformation
+├── Model_Training.py          # Training and evaluation of the YOLO11n-cls model
+├── Defected_TVs_Parts/        # Archive of generated (good) TVs
+├── TV_Dataset_Parts/          # Archive of generated defected TVs
+├── Masks.rar                  # Compressed binary masks
+├── Automated-TV-Defect-Detection.pptx   # Project proposal
+├── Project-Review.pptx        # Interim report (PPT)
+└── Project-Review.pdf         # Interim report (PDF)
 ## The Pipeline
 
 The project consists of a fully automated pipeline with four main stages:
