@@ -8,6 +8,10 @@ This project presents a novel approach to detecting and classifying defects on T
 * Ori Zarfaty
 * Yaniv Hananis
 
+## 📂 Full Dataset Access
+**[🔗 Click here to access the full dataset on OneDrive]**
+*((https://drive.google.com/drive/folders/1jysEP3WOvEMylpYb1iQzMpk4cBdb_lCY?usp=sharing))*
+
 ## Repository Structure
 
 This repository is organized as follows:
