@@ -5,10 +5,10 @@ import time
 from diffusers import StableDiffusionXLPipeline, AutoencoderKL, EulerDiscreteScheduler
 
 
-save_folder = r"C:\Users\amitw\OneDrive\Desktop\Tv_Dataset"
+save_folder = r"C:\Users\amitw\OneDrive\Desktop\Tv_Dataset" #change according to where you want the folder to be created
 os.makedirs(save_folder, exist_ok=True)
 print(f"Images will be saved to: {save_folder}")
-BATCH_SIZE = 7
+BATCH_SIZE = 7 # the limit for my rtx 3080 take into consideration 
 
 vae = AutoencoderKL.from_pretrained("madebyollin/sdxl-vae-fp16-fix", torch_dtype=torch.float16)
 
@@ -99,3 +99,4 @@ for batch_index in range(num_Batches):
 
     print(f"[{batch_index + 1}/{num_Batches}] Batch finished in {batch_time:.2f}s")
 print("Done!")
+
