@@ -81,7 +81,7 @@ We trained the YOLO11n-cls model for 10 epochs on two datasets to validate our p
 The **Rectification** step proved critical. By isolating the TV screen, we reduced training time by ~43% while maintaining comparable accuracy, making the model more efficient for deployment.
 
 ## 📈 Statistics & Training Performance of Rectified Dataset
-![Loss](Automated%20TV%20Defect%20Detection%20Using%20Generative%20AI%20Code/visuals/training_loss.png) |
+![Loss](Automated%20TV%20Defect%20Detection%20Using%20Generative%20AI%20Code/visuals/training_loss.png) 
 
 ### Final Metrics (Rectified Model)
 * **Model:** YOLO11n-cls
