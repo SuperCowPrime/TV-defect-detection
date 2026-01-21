@@ -37,12 +37,12 @@ The project consists of a fully automated pipeline with four main stages:
 4.  **Perspective Rectification:** Preprocessing the dataset by isolating and "flattening" the TV screens using OpenCV perspective transformation. We conduct a comparative analysis between models trained on Raw Images vs. Rectified Images to evaluate the impact on accuracy.
 5.  **Classification:** Training two separate YOLO11n-cls models on the synthetic datasets (one Raw, one Rectified) to classify the defect type and establish a robust performance comparison.
 
-   ## 📊 Generation Process & Results
+  ## 📊 Generation Process & Results
 Here is a breakdown of the data generation pipeline:
 
 | 1. Original Clean | 2. Generated Mask | 3. Inpainted (Broken) | 4. Rectified View |
 |:---:|:---:|:---:|:---:|
-| ![Clean](visuals/tv_clean.png) | ![Mask](visuals/tv_mask.png) | ![Broken](visuals/tv_broken.png) | ![Rectified](visuals/tv_rectified.png) |
+| ![Clean](Automated%20TV%20Defect%20Detection%20Using%20Generative%20AI%20Code/visuals/tv_clean.png) | ![Mask](Automated%20TV%20Defect%20Detection%20Using%20Generative%20AI%20Code/visuals/tv_mask.png) | ![Broken](Automated%20TV%20Defect%20Detection%20Using%20Generative%20AI%20Code/visuals/tv_broken.png) | ![Rectified](Automated%20TV%20Defect%20Detection%20Using%20Generative%20AI%20Code/visuals/tv_rectified.png) |
 
 ## Defect Classes
 
