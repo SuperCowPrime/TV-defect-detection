@@ -10,7 +10,7 @@ This project presents a novel approach to detecting and classifying defects on T
 
 ## 📂 Full Dataset Access
 The full dataset is on google drive:
-*((https://drive.google.com/drive/folders/1jysEP3WOvEMylpYb1iQzMpk4cBdb_lCY?usp=sharing))*
+*(https://drive.google.com/drive/folders/1jysEP3WOvEMylpYb1iQzMpk4cBdb_lCY?usp=sharing)*
 
 ## Repository Structure
 
