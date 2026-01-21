@@ -71,11 +71,7 @@ We trained the YOLO11n-cls model for 10 epochs on two datasets to validate our p
 2.  **Rectified Dataset:** Images processed via `Rectify.py` to isolate the screen.
 
 ## 📈 Statistics & Training Performance
-Here is the distribution of the dataset classes and the LoRA training loss curve over 100 epochs.
-
-| Class Distribution | Training Loss Curve |
-|:---:|:---:|
-| ![Distribution](Automated%20TV%20Defect%20Detection%20Using%20Generative%20AI%20Code/visuals/data_distribution.png) | ![Loss](Automated%20TV%20Defect%20Detection%20Using%20Generative%20AI%20Code/visuals/training_loss.png) |
+![Loss](Automated%20TV%20Defect%20Detection%20Using%20Generative%20AI%20Code/visuals/training_loss.png) |
 
 ### Performance Comparison
 
