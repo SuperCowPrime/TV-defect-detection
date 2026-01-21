@@ -12,21 +12,21 @@ This project presents a novel approach to detecting and classifying defects on T
 
 This repository is organized as follows:
 
-* **`Automated TV Defect Detection Using Generative AI Code/`**: Main folder containing source code and data.
+* **`Automated TV Defect Detection Using Generative AI Code/`**: Main folder containing source code and presentations.
+*  **`code/`**: Sub folder containing source code.
     * **`GenerationV_4.py`**: Code used to generate the synthetic images.
     * **`Mask_Creation.py`**: Code used to generate the masks.
     * **`Defect_Creation.py`**: Code used to generate the defects.
     * **`Model_Training.py`**: Training and evaluation of the YOLO11n-cls model.
     * **`Rectify.py`**: Preprocessing script that applies perspective transformation to flatten the TV screens (used for comparative analysis).
-    * **`Defected_TVs_Parts/`**: Folder containing archive of the generated (good) TVs.
-    * **`TV_Dataset_Parts/`**: Folder containing archive of the generated defected TVs.
-    * **`Masks.rar`**: Compressed archive containing the generated binary masks.
+      
+*  **`slides/`**: Sub folder containing presentations.
 * **`Automated-TV-Defect-Detection (proposal slides).pptx`**: Project proposal.
 * **`Project-Review-AI-for-Defect-Detection.pptx`**: Interim report presentation (PPT format).
 * **`Project-Review-AI-for-Defect-Detection.pdf`**: Interim report presentation (PDF format).
 * **`Project_Final_PresentationV2.pptx`**: Final presentation (PPT format).
 * **`Project_Final_PresentationV2.pdf`**:  Final presentation (PDF format).
-> **Note:** Due to GitHub's file size limitations, the dataset uploaded to this repository is a **partial sample** of the full dataset used to achieve the reported results.
+
 ## The Pipeline
 
 The project consists of a fully automated pipeline with four main stages:
