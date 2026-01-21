@@ -17,20 +17,20 @@ The full dataset is on google drive:
 This repository is organized as follows:
 
 * **`Automated TV Defect Detection Using Generative AI Code/`**: Main folder containing source code and presentations.
-*  **`code/`**: Sub folder containing source code.
-    * **`GenerationV_4.py`**: Code used to generate the synthetic images.
-    * **`Mask_Creation.py`**: Code used to generate the masks.
-    * **`Defect_Creation.py`**: Code used to generate the defects.
-    * **`Model_Training.py`**: Training and evaluation of the YOLO11n-cls model.
-    * **`Rectify.py`**: Preprocessing script that applies perspective transformation to flatten the TV screens (used for comparative analysis).
+   *  **`code/`**: Sub folder containing source code.
+       * **`GenerationV_4.py`**: Code used to generate the synthetic images.
+       * **`Mask_Creation.py`**: Code used to generate the masks.
+       * **`Defect_Creation.py`**: Code used to generate the defects.
+       * **`Model_Training.py`**: Training and evaluation of the YOLO11n-cls model.
+       * **`Rectify.py`**: Preprocessing script that applies perspective transformation to flatten the TV screens (used for comparative analysis).
       
-*  **`slides/`**: Sub folder containing presentations.
-   * **`Automated-TV-Defect-Detection (proposal slides).pptx`**: Project proposal (PPT format).
-   * **`Automated-TV-Defect-Detection (proposal slides).pdf`**: Project proposal (PDF format).
-   * **`Project-Review-AI-for-Defect-Detection.pptx`**: Interim report presentation (PPT format).
-   * **`Project-Review-AI-for-Defect-Detection.pdf`**: Interim report presentation (PDF format).
-   * **`Project_Final_PresentationV2.pptx`**: Final presentation (PPT format).
-   * **`Project_Final_PresentationV2.pdf`**:  Final presentation (PDF format).
+   *  **`slides/`**: Sub folder containing presentations.
+      * **`Automated-TV-Defect-Detection (proposal slides).pptx`**: Project proposal (PPT format).
+      * **`Automated-TV-Defect-Detection (proposal slides).pdf`**: Project proposal (PDF format).
+      * **`Project-Review-AI-for-Defect-Detection.pptx`**: Interim report presentation (PPT format).
+      * **`Project-Review-AI-for-Defect-Detection.pdf`**: Interim report presentation (PDF format).
+      * **`Project_Final_PresentationV2.pptx`**: Final presentation (PPT format).
+      * **`Project_Final_PresentationV2.pdf`**:  Final presentation (PDF format).
 
 ## The Pipeline
 
