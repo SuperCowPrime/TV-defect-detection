@@ -37,6 +37,11 @@ The project consists of a fully automated pipeline with four main stages:
 4.  **Perspective Rectification:** Preprocessing the dataset by isolating and "flattening" the TV screens using OpenCV perspective transformation. We conduct a comparative analysis between models trained on Raw Images vs. Rectified Images to evaluate the impact on accuracy.
 5.  **Classification:** Training two separate YOLO11n-cls models on the synthetic datasets (one Raw, one Rectified) to classify the defect type and establish a robust performance comparison.
 
+## 🏗️ System Architecture
+The following diagram illustrates the end-to-end pipeline: from raw image collection, through homography and mask generation, to the final Inpainting process.
+
+![Pipeline](Automated%20TV%20Defect%20Detection%20Using%20Generative%20AI%20Code/visuals/project_pipeline.png)
+
   ## 📊 Generation Process & Results
 Here is a breakdown of the data generation pipeline:
 
@@ -54,12 +59,30 @@ The dataset utilized for training consists of **7,200 synthetic images**, balanc
 * **Shattered_corner:** Structural damage in the corner (900 images).
 * **Puncture:** Impact holes/crushed glass (900 images).
 
+### 📊 Dataset Class Distribution
+The dataset is balanced and contains 7,200 images, divided equally among the processing stages:
+
+![Distribution](Automated%20TV%20Defect%20Detection%20Using%20Generative%20AI%20Code/visuals/data_distribution.png)
+
 
 ## Results & Comparative Analysis
 
 We trained the YOLO11n-cls model for 10 epochs on two datasets to validate our preprocessing pipeline:
 1.  **Raw Dataset:** Standard images with industrial background.
 2.  **Rectified Dataset:** Images processed via `Rectify.py` to isolate the screen.
+
+### 🌍 Generated Dataset Variety
+Our model is capable of generating various defect types across different TV models and lighting conditions.
+
+![Variety](Automated%20TV%20Defect%20Detection%20Using%20Generative%20AI%20Code/visuals/dataset_variety.png)
+
+
+## 📈 Statistics & Training Performance
+Here is the distribution of the dataset classes and the LoRA training loss curve over 100 epochs.
+
+| Class Distribution | Training Loss Curve |
+|:---:|:---:|
+| ![Distribution](Automated%20TV%20Defect%20Detection%20Using%20Generative%20AI%20Code/visuals/data_distribution.png) | ![Loss](Automated%20TV%20Defect%20Detection%20Using%20Generative%20AI%20Code/visuals/training_loss.png) |
 
 ### Performance Comparison
 
