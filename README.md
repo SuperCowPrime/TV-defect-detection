@@ -61,7 +61,7 @@ The dataset utilized for training consists of **7,200 synthetic images**, balanc
 ![Distribution](Automated%20TV%20Defect%20Detection%20Using%20Generative%20AI%20Code/visuals/data_distribution.png)
 
 ###  Dataset Variety
-![Variety](Automated%20TV%20Defect%20Detection%20Using%20Generative%20AI%20Code/visuals/dataset_variety.png)
+![Variety](Automated%20TV%20Defect%20Detection%20Using%20Generative%20AI%20Code/visuals/dataset_variety.jpg)
 
 
 ## Results & Comparative Analysis
