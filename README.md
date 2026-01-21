@@ -9,7 +9,7 @@ This project presents a novel approach to detecting and classifying defects on T
 * Yaniv Hananis
 
 ## 📂 Full Dataset Access
-** The full dataset is on google drive**
+The full dataset is on google drive:
 *((https://drive.google.com/drive/folders/1jysEP3WOvEMylpYb1iQzMpk4cBdb_lCY?usp=sharing))*
 
 ## Repository Structure
