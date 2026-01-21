@@ -47,9 +47,6 @@ The dataset utilized for training consists of **7,200 synthetic images**, balanc
 * **Shattered_corner:** Structural damage in the corner (900 images).
 * **Puncture:** Impact holes/crushed glass (900 images).
 
-  | Original TV | Mask Generated | Inpainting Result |
-|:---:|:---:|:---:|
-| ![Original](visuals/tv_fast_0020_314001480_good.png) | ![Mask](visuals/tv_fast_0020_314001480_mask.png) | ![Broken](visuals/tv_fast_0020_314001480_scratch.png) |
 
 ## Results & Comparative Analysis
 
